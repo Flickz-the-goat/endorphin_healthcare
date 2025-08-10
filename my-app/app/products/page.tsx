@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { products } from "../constants";
+import Image from "next/image";
 
 export const metadata = {
   title: "Products | Endorphin Global Healthcare",
@@ -19,13 +20,15 @@ export default function Products() {
             <Link
               key={p.slug}
               href={`/products/${p.slug}`}
-              className="group rounded-2xl border border-neutral-100 bg-white p-6 shadow-sm hover:shadow-md"
+              className="group rounded-2xl border border-neutral-100 bg-white shadow-sm hover:shadow-md"
             >
-              <div className="h-28 rounded-xl bg-gradient-to-br from-neutral-100 to-neutral-50 group-hover:scale-[1.02] transition-transform" />
-              <div className="mt-4 font-semibold text-neutral-900">
+              <div className="overflow-hidden object-contain relative h-56 rounded-t-xl group-hover:scale-[1.02] transition-transform" > 
+                                <Image src={p.image} alt="product-image" fill />
+                            </div>
+              <div className="mt-4 font-semibold text-neutral-900 px-6">
                 {p.name}
               </div>
-              <p className="mt-1 text-sm text-neutral-600">{p.description}</p>
+              <p className="mt-1 text-sm text-neutral-600 px-6 pb-6">{p.description}</p>
             </Link>
           ))}
         </div>

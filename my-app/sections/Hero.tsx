@@ -28,7 +28,7 @@ export default function Hero() {
                 Start Your Journey
               </Button>
             </div>
-            <div className="mt-6 flex items-center gap-6 text-sm text-neutral-600">
+            <div className="my-6 flex items-center gap-6 text-sm text-neutral-600">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-lime-400" /> Clinically
                 guided
@@ -39,10 +39,10 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-5 mb-10">
-            <div className="relative aspect-[4/4] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-100 to-neutral-50 shadow-lg">
+          <div className="lg:col-span-5  lg:block hidden mb-10 ">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-100 to-neutral-50 shadow-lg">
               <Image
-                src={"/endorphin_healthcare_logo.png"}
+                src={"/hero-section.jpg"}
                 alt="hero-image"
                 fill
               />

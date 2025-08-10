@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { products } from "../app/constants";
+import Image from "next/image";
 
 export default function ProductsSection() {
   return (
     <section id="products" className="relative py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="flex items-end justify-between gap-6">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
             Featured Treatments
@@ -24,16 +25,16 @@ export default function ProductsSection() {
               className="group relative overflow-hidden rounded-3xl border border-neutral-100 bg-white shadow-sm transition-transform hover:shadow-md"
             >
               <div
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch ${
-                  i % 2 === 0 ? "lg:[&>*:first-child]:order-2" : ""
+                className={`grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch ${
+                  i % 2 === 0 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
-                <div className="lg:col-span-5 relative">
+                <div className="md:col-span-5 relative object-contain">
                   <div className="h-full min-h-64 bg-gradient-to-br from-neutral-100 to-neutral-50">
-                    <div className="h-full w-full bg-[radial-gradient(circle_at_30%_20%,rgba(51,218,253,0.18),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(154,213,75,0.18),transparent_35%)] transition-transform duration-500 group-hover:scale-105" />
+                    <Image src={p.image} alt="product-image" fill/>
                   </div>
                 </div>
-                <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col">
+                <div className="md:col-span-7 p-6 sm:p-10 flex flex-col">
                   <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-cyan-600">
                     <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />{" "}
                     Medical Weight Loss & Wellness

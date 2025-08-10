@@ -3,7 +3,7 @@ import Button from "../components/Button";
 export default function CTASection() {
   return (
     <section className="relative py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-3xl border border-neutral-100 bg-gradient-to-r from-neutral-50 to-white shadow-sm">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 overflow-hidden md:rounded-3xl border border-neutral-100 bg-gradient-to-r from-neutral-50 to-white shadow-sm">
         <div className="relative isolate p-10 md:p-16">
           <div
             aria-hidden
@@ -23,7 +23,7 @@ export default function CTASection() {
               </p>
             </div>
             <div className="md:justify-self-end">
-              <Button href="/intake">Fill Out Intake Form</Button>
+              <Button href="/prodcuts">Check out our products</Button>
             </div>
           </div>
         </div>

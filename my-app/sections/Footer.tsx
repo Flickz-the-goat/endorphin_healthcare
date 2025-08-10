@@ -52,11 +52,6 @@ export default function Footer() {
             </div>
             <ul className="mt-3 space-y-2 text-sm text-neutral-700">
               <li>
-                <Link href="/intake" className="hover:text-neutral-900">
-                  Fill Out Intake Form
-                </Link>
-              </li>
-              <li>
                 <Link href="/products" className="hover:text-neutral-900">
                   View All Products
                 </Link>

@@ -17,7 +17,7 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]";
+    "hover:cursor-pointer inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]";
   const styles =
     variant === "primary"
       ? "bg-gradient-to-r from-cyan-400 to-lime-400 text-neutral-900 shadow-sm hover:from-cyan-300 hover:to-lime-300"

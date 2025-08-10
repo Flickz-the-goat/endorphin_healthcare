@@ -29,14 +29,11 @@ export default function ReviewsSection() {
             change.
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6">
-          <div className="lg:col-span-5 grid gap-6">
-            {reviews.slice(0, 2).map((r) => (
+        <div className="mt-10 flex items-center justify-center flex-wrap">
+          <div className="grid gap-6">
+            {reviews.map((r) => (
               <ReviewCard key={r.name} {...r} />
             ))}
-          </div>
-          <div className="lg:col-span-7">
-            <ReviewCard {...reviews[2]} tall />
           </div>
         </div>
       </div>
@@ -48,7 +45,6 @@ function ReviewCard({
   name,
   text,
   rating,
-  tall = false,
 }: {
   name: string;
   text: string;
@@ -57,13 +53,10 @@ function ReviewCard({
 }) {
   return (
     <div
-      className={`relative overflow-hidden rounded-3xl border border-neutral-100 bg-white p-6 shadow-sm ${
-        tall ? "min-h-64" : ""
-      }`}
+      className={`relative overflow-hidden rounded-3xl border border-neutral-100 bg-white p-6 shadow-sm `}
     >
       <div className="absolute -left-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-tr from-cyan-200/50 to-lime-200/50 blur-2xl" />
       <div className="flex items-center gap-3">
-        <div className="h-10 w-10 rounded-full bg-neutral-200" />
         <div>
           <div className="font-semibold text-neutral-900">{name}</div>
           <div className="text-sm text-yellow-500">
@@ -73,7 +66,6 @@ function ReviewCard({
         </div>
       </div>
       <p className="mt-4 text-neutral-700">{text}</p>
-      <div className="mt-6 h-32 rounded-xl bg-gradient-to-br from-neutral-100 to-neutral-50" />
     </div>
   );
 }

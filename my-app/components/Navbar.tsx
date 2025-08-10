@@ -27,22 +27,22 @@ export default function Navbar() {
               className="rounded"
             />
             <span className="hidden sm:inline text-gray-900">
-              Endorphin Global Healthcare
-            </span>
+              Endorphin Global Healthcare X AsherMed            
+                        </span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={`/${item.href}`}
                 className="text-sm text-neutral-700 hover:text-neutral-900 transition-colors"
               >
                 {item.label}
               </a>
             ))}
             <Link
-              href="#products"
-              className="inline-flex items-center rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-cyan-300 transition-colors"
+              href="/#products"
+              className="inline-flex items-center rounded-full from-cyan-400 to-cyan-400 bg-gradient-to-r px-4 py-2 text-sm font-semibold text-neutral-900 hover:to-lime-400 transition-colors"
             >
               View Products
             </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
             className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-neutral-200"
             onClick={() => setOpen((v) => !v)}
           >
-            <Menu className="w-2 h-2 stroke-gray-900" />
+            <Menu className="w-6 h-6 stroke-neutral-400" />
           </button>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={`/${item.href}`}
                 className="text-sm"
                 onClick={() => setOpen(false)}
               >
@@ -70,8 +70,8 @@ export default function Navbar() {
               </a>
             ))}
             <Link
-              href="#products"
-              className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-cyan-300 transition-colors"
+              href="/#products"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 to-cyan-400 px-4 py-2 text-sm font-semibold text-neutral-900 hover:to-lime-400 transition-colors"
               onClick={() => setOpen(false)}
             >
               View Products
