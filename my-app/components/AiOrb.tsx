@@ -19,7 +19,7 @@ export default function AiOrb() {
         <>
             <div className="flex justify-center items-center">
                 <iframe
-                    src="https://iframes.ai/o/1754925931660x260603219705331700?color=15a18e&icon=mic"
+                    src="https://iframes.ai/o/1754925931660x260603219705331700?color=06b6d4&icon=mic"
                     allow="microphone"
                     className="w-full h-[200px] border-none"
                     id="assistantFrame"
