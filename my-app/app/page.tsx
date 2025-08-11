@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <ProductsSection />
       <BenefitsSection />
-    <FreeResourcesSection />
+      <FreeResourcesSection />
       <CTASection />
       <TeamSection />
       <FAQSection />

@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function Hero() {
   return (
-    <section className="relative isolate pt-28 md:pt-36">
+    <section className="relative isolate pt-32 md:pt-36">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"

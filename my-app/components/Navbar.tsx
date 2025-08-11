@@ -15,20 +15,20 @@ const navItems = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-neutral-100">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white border-b border-neutral-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-26 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Image
               src="/endorphin_healthcare_logo.png"
               alt="Endorphin Global"
-              width={36}
-              height={36}
+              width={104}
+              height={104}
               className="rounded"
             />
             <span className="hidden sm:inline text-gray-900">
-              Endorphin Global Healthcare X AsherMed            
-                        </span>
+              Endorphin Global Healthcare X AsherMed
+            </span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
