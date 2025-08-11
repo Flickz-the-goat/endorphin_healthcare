@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Disclaimer from "@/sections/Disclaimer";
+import Footer from "@/sections/Footer";
+import SocialMedia from "@/components/SocialMedia";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -52,6 +55,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Disclaimer />
+        <Footer />
       </body>
     </html>
   );

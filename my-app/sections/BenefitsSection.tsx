@@ -27,7 +27,7 @@ export default function BenefitsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
-            Why Endorphin Global?
+            Why Endorphin Healthcare?
           </h2>
           <p className="mt-4 text-neutral-600">
             Trusted, science-led, and patient-first. We build programs that fit

@@ -27,7 +27,7 @@ export default function Navbar() {
               className="rounded"
             />
             <span className="hidden sm:inline text-gray-900">
-              Endorphin Global Healthcare X AsherMed
+              Endorphin Healthcare 
             </span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">

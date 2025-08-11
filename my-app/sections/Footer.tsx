@@ -7,12 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="text-lg font-semibold text-neutral-900">
-              Endorphin Global Healthcare
+              Endorphin Healthcare
             </div>
             <p className="mt-3 max-w-md text-sm text-neutral-600">
               Science-backed medical weight loss and wellness optimization.
               Tirzepatide, Semaglutide, NAD+, Sermorelin, and Glutathione.
             </p>
+            <p className="mt-3  max-w-md text-sm text-neutral-600">We respect your privacy and never share your personal information without your consent.</p>
           </div>
           <div>
             <div className="text-sm font-semibold text-neutral-900">

@@ -18,6 +18,10 @@ const faqs = [
     q: "What products do you offer?",
     a: "Tirzepatide, Semaglutide, NAD+, Sermorelin, and Glutathione with expert guidance.",
   },
+  {
+    q: "How is my privacy respected?",
+    a: "We highly value your privacy, and never share your personal information without your consent",
+  },
 ];
 
 export default function FAQSection() {
@@ -27,7 +31,7 @@ export default function FAQSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 text-center">
           Frequently Asked Questions
         </h2>
-        <div className="mt-10 divide-y divide-neutral-200 rounded-2xl border border-neutral-100 bg-white">
+        <div className="mt-10 divide-y divide-neutral-200 rounded-2xl bg-white">
           {faqs.map((f) => (
             <Accordion key={f.q} question={f.q} answer={f.a} />
           ))}
@@ -40,22 +44,23 @@ export default function FAQSection() {
 function Accordion({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="p-5">
+    <div className="p-5 hover:cursor-pointer hover:bg-gray-100 rounded-md mt-2 border-b border-neutral-200"
+        onClick={() => setOpen((v) => !v)}
+        >
       <button
         className="flex w-full items-center justify-between text-left"
-        onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
         <span className="font-medium text-neutral-900">{question}</span>
         <span className="ml-4 text-cyan-600">{open ? "−" : "+"}</span>
       </button>
       <div
-        className={`grid transition-all duration-300 ${
+        className={`hover:cursor-pointer grid transition-all duration-300 ${
           open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-70"
         }`}
       >
         <div className="overflow-hidden">
-          <p className="mt-3 text-sm text-neutral-600">{answer}</p>
+          <p className="mt-3 text-sm text-neutral-600 hover:cursor-pointer">{answer}</p>
         </div>
       </div>
     </div>
