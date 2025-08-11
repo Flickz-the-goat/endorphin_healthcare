@@ -39,11 +39,16 @@ export default async function ProductPage({
           ))}
         </ul>
 
-        <h2 className="mt-8 text-center text-md text-neutral-900 font-extrabold">New Patients Only Plans</h2>
+        <h2 className="mt-8 text-center text-md text-neutral-900 font-extrabold">
+          New Patients Only Plans
+        </h2>
         <div className="mt-2 flex gap-4 justify-center">
-                    <Link href={"https://app.centerfy.ai/location/hK9kgqxIRE2CoCxSZCzX/page-builder/AeCZaabnRkOoc7FSkDx7"}>
-                        <Button>Join our Program</Button>
-                    </Link>
+          <Link
+            href={"https://app.centerfy.ai/v2/preview/AeCZaabnRkOoc7FSkDx7"}
+            target="_blank"
+          >
+            <Button>Join our Program</Button>
+          </Link>
         </div>
 
         <div className=" mt-6 border-t p-6 border-neutral-200 rounded-xl space-y-12">

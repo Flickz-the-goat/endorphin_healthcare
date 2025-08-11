@@ -1,4 +1,5 @@
 import Hero from "../sections/Hero";
+import YourJourneySection from "../sections/YourJourneySection";
 import ProductsSection from "../sections/ProductsSection";
 import BenefitsSection from "../sections/BenefitsSection";
 import CTASection from "../sections/CTASection";
@@ -9,17 +10,20 @@ import FreeResourcesSection from "@/sections/FreeResources";
 import OrbSection from "@/sections/OrbSection";
 
 export default function Home() {
-    return (
-        <main className="relative min-h-screen overflow-x-clip">
-            <Hero />
-            <OrbSection />
-            <ProductsSection />
-            <BenefitsSection />
-            <FreeResourcesSection />
-            <CTASection />
-            <TeamSection />
-            <FAQSection />
-            <ReviewsSection />
-        </main>
-    );
+  return (
+    <main className="relative min-h-screen overflow-x-clip">
+      <Hero />
+      <YourJourneySection />
+      {
+        //<OrbSection />
+      }
+      <ProductsSection />
+      <BenefitsSection />
+      <FreeResourcesSection />
+      <CTASection />
+      <TeamSection />
+      <FAQSection />
+      <ReviewsSection />
+    </main>
+  );
 }

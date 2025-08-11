@@ -25,7 +25,11 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={`${base} ${styles} ${className}`}>
+      <Link
+        href={href}
+        target={`${variant === "secondary" ? "_blank" : "_self"}`}
+        className={`${base} ${styles} ${className}`}
+      >
         {children}
       </Link>
     );
