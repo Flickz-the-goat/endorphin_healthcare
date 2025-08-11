@@ -7,11 +7,13 @@ import FAQSection from "../sections/FAQSection";
 import ReviewsSection from "../sections/ReviewsSection";
 import Footer from "../sections/Footer";
 import FreeResourcesSection from "@/sections/FreeResources";
+import OrbSection from "@/sections/OrbSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-clip">
       <Hero />
+        <OrbSection />
       <ProductsSection />
       <BenefitsSection />
       <FreeResourcesSection />
