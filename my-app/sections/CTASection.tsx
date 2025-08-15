@@ -23,7 +23,7 @@ export default function CTASection() {
               </p>
             </div>
             <div className="md:justify-self-end">
-              <Button href="/prodcuts">Check out our products</Button>
+              <Button href="/products">Check out our products</Button>
             </div>
           </div>
         </div>
