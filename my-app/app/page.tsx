@@ -21,7 +21,8 @@ export default function Home() {
       <BenefitsSection />
       <FreeResourcesSection />
       <CTASection />
-      <TeamSection />
+{      //<TeamSection /> 
+            }
       <FAQSection />
       <ReviewsSection />
     </main>
